@@ -1,0 +1,110 @@
+/*body {
+    background-color: black;
+}
+navbar {
+    color: white;
+}
+*/
+.tmbl {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 20px;
+}
+.tmblctrl {
+    opacity: 0%;
+}
+.container:hover .tmblctrl {
+    transition: 0.3s;
+    opacity: 100%;
+    border-radius: 50px;
+    margin: 20px 20px;
+
+}
+.kategori {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 1100px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.kategori p {
+    font-size: 28px;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.kategori a {
+    font-size: 15px;
+    margin-left: 30px;
+    border: black;
+    text-decoration: none;
+    color: black;
+}
+
+.kategori a:hover {
+    background-color: bisque;
+}
+/*
+.jln marquee {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: px;
+}
+*/
+.jns {
+    margin-bottom: 50px;
+}
+.jns a{
+    text-decoration: none;
+    color: black;
+}
+.jns1{
+    background-color: yellow;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.jns span {
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.produk {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+}
+.produk a {
+    text-decoration: none;
+    color: black;
+    
+}
+.produk a h5 {
+    font-size: 17px;
+    margin-top: -20px;
+}
+.produk p {
+    font-size: 14px;
+}
+
+.produk img:hover {
+    transition: 0.5s;
+    transform: scale(1.3);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: green;
+    padding-bottom: 40px;
+}
+.jln {
+    margin-bottom: 20px;
+}
