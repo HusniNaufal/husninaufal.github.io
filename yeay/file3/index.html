@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY SAYANG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="font/TrueType/SFBalloons.ttf">
+    <!--ICON-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    
+    <link rel="stylesheet" href="https://github.com/sweetalert2/sweetalert2/blob/main/src/sweetalert2.scss" id="theme-styles"> 
+</head>
+
+<body>
+    <div class="judul">
+        <h3>
+            <img src="/img/icon/bunga.png" width="30px">
+            HAPPY BIRTHDAY AYANG
+            <img src="/img/icon/bunga.png" width="30px">
+        </h3>
+    </div>
+    <hr>
+    <div class="teks">
+        <p>Selamat ulang tahun ayang<br>
+        Semoga sehat selalu<br>
+        Semoga dikabulkan semua hal yang ayang inginkan<br>
+        Semoga mendapatkan IPK 4.00<br>
+        Semoga bisa tercapai fast track<br>
+        &#x2764; &#x2764; &#x2764;
+    </p>
+    </div>
+    <div class="isi">
+        
+        <h4>FOTO - FOTO AYANG ULTAH KEMARIN</h4>
+        <div class="marquee">
+            <div>
+            <img class="fto" src="/img/gembul/17/kue.jpg" width="200">
+            <img class="fto" src="/img/gembul/17/5.jpg" width="200">
+            <img class="fto" src="/img/gembul/17/1.jpg" width="200">
+            <img class="fto" src="/img/gembul/17/2.jpg" width="200">
+            <img class="fto" src="/img/gembul/17/3.jpg" width="200">
+            <img class="fto" src="/img/gembul/17/4.jpg" width="200">
+            </div>
+        </div>
+        
+        <h4>FOTO - FOTO AYANG SAMA BONEKA NIH</h4>
+        <div class="marqueekn">
+            <div>
+            <img class="fto" src="/img/gembul/bnk/3.jpg" width="200">
+            <img class="fto" src="/img/gembul/bnk/2.jpg" width="200">
+            <img class="fto" src="/img/gembul/bnk/1.jpg" width="200">
+            <img class="fto" src="/img/gembul/bnk/3.jpg" width="200">
+            <img class="fto" src="/img/gembul/bnk/2.jpg" width="200">
+            <img class="fto" src="/img/gembul/bnk/1.jpg" width="200">
+            </div>
+        </div>
+        <h4>FOTO - FOTO AYANG WAKTU KULIAH</h4>
+        <div class="marquee">
+            <div>
+            <img class="fto" src="img/gembul/1.jpg" width="200">
+            <img class="fto" src="img/gembul/2.jpg" width="200">
+            <img class="fto" src="img/gembul/3.jpg" width="200">
+            <img class="fto" src="img/gembul/4.jpg" width="200">
+            <img class="fto" src="img/gembul/5.jpg" width="200">
+            <img class="fto" src="img/gembul/6.jpg" width="200">
+            
+            </div>
+        </div>
+        <button class="btn btn-primary" onclick="contoh()">Klik disini</button>
+        <img src="img/ombak.png" width="370" style="top: -30px;">
+        
+
+    </div>
+    
+    
+    <canvas id="Canvas">
+        
+    </canvas>
+    
+    <footer>
+        <h3>Love u sayang &#x2764; &#x2764; &#x2764;</h3>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        
+        function contoh(){
+        const swalWithBootstrapButtons = Swal.mixin({
+          customClass: {
+           confirmButton: "btn btn-success",
+           cancelButton: "btn btn-danger"
+          },
+         buttonsStyling: false
+        });
+        swalWithBootstrapButtons.fire({
+            title: "Gimana sayang suka webnya ndak?",
+            text: "",
+            imageUrl: "img/kcg.jpg",
+            icon: "",
+            showCancelButton: true,
+            confirmButtonText: "sukaaaa",
+            cancelButtonText: "Tidak suka :(",
+            reverseButtons: true
+        }).then((result) => {
+        if (result.isConfirmed) {
+           swalWithBootstrapButtons.fire({
+           title: "Yeayyy ayang sukaaa",
+           text: "",
+          icon: "success"
+        });
+        } else if (
+         /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+         ) {
+        swalWithBootstrapButtons.fire({
+           title: "Yahhh sedihh ayang gasukaa",
+           text: "sorry ayang :)",
+           icon: "error"
+        });
+       }
+      });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
